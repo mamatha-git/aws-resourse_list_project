@@ -7,11 +7,9 @@ This project provides a Bash automation script (aws_resource_list.sh) to list va
 
 It is useful for:
 
-Cloud Engineers and DevOps Engineers managing AWS infrastructure
-
-Students and beginners learning AWS CLI automation
-
-Audit and monitoring of AWS resources
+• Cloud Engineers and DevOps Engineers managing AWS infrastructure
+• Students and beginners learning AWS CLI automation
+• Audit and monitoring of AWS resources
 
 # Features
 
