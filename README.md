@@ -1,29 +1,108 @@
 
 # AWS Resource Listing Automation Script
 
-This project is a Bash automation script that lists resources across multiple AWS services in a given region. The script helps cloud engineers and DevOps professionals quickly retrieve resource details without navigating through the AWS Management Console.
+# Overview
+
+This project provides a Bash automation script (aws_resource_list.sh) to list various AWS resources in a specific region. Instead of running multiple AWS CLI commands manually, this script allows you to quickly retrieve information about services like EC2, S3, RDS, IAM, Lambda, etc.
+
+It is useful for:
+
+Cloud Engineers and DevOps Engineers managing AWS infrastructure
+
+Students and beginners learning AWS CLI automation
+
+Audit and monitoring of AWS resources
 
 # Features
 
-Supports 14 AWS services including EC2, RDS, S3, CloudFront, VPC, IAM, Route53, CloudWatch, CloudFormation, Lambda, SNS, SQS, DynamoDB, and EBS.
+The script currently supports the following AWS services:
 
-Accepts AWS region and service name as command-line arguments.
+EC2 Instances
 
-Validates AWS CLI installation and configuration before execution.
+RDS Databases
 
-Provides simple, automated resource discovery for auditing and monitoring.
+S3 Buckets
 
+CloudFront Distributions
+
+VPCs
+
+IAM Users
+
+Route53 Hosted Zones
+
+CloudWatch Alarms
+
+CloudFormation Stacks
+
+Lambda Functions
+
+SNS Topics
+
+SQS Queues
+
+DynamoDB Tables
+
+EBS Volumes
+
+# Prerequisites
+
+Before running this script, make sure you have:
+
+Linux / MacOS / WSL environment
+
+AWS CLI installed → Install Guide
+
+AWS CLI configured with your credentials:
+
+aws configure
 
 # Usage
+Clone the repository
+git clone https://github.com/<your-username>/aws-resource-listing.git
+cd aws-resource-listing
+
+Make the script executable
+chmod +x aws_resource_list.sh
+
+Run the script
 ./aws_resource_list.sh <aws_region> <aws_service>
-# Example:
+
+Example
 ./aws_resource_list.sh us-east-1 ec2
 
 
-# Key Benefits
+This will list all EC2 instances in the us-east-1 region.
 
-Saves time by automating repetitive AWS resource listing tasks.
+# Example Outputs
 
-Ensures consistency in fetching details across services.
+EC2
 
-Useful for cloud audits, troubleshooting, and learning AWS CLI.
+Listing EC2 Instances in us-east-1
+{
+    "Reservations": [
+        {
+            "Instances": [
+                {
+                    "InstanceId": "i-0abcd1234efgh5678",
+                    "State": { "Name": "running" },
+                    "InstanceType": "t2.micro"
+                }
+            ]
+        }
+    ]
+}
+
+
+S3
+
+Listing S3 Buckets
+{
+    "Buckets": [
+        {
+            "Name": "my-first-bucket",
+            "CreationDate": "2024-01-01T10:00:00.000Z"
+        }
+    ]
+}
+
