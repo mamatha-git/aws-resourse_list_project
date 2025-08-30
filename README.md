@@ -17,7 +17,7 @@ Audit and monitoring of AWS resources
 
 The script currently supports the following AWS services:
 
-EC2 Instances
+[x] EC2 Instances
 
 RDS Databases
 
