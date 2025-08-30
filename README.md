@@ -17,56 +17,53 @@ Audit and monitoring of AWS resources
 
 The script currently supports the following AWS services:
 
-[x] EC2 Instances
+• EC2 Instances
 
-RDS Databases
+• RDS Databases
 
-S3 Buckets
+• S3 Buckets
 
-CloudFront Distributions
+• CloudFront Distributions
 
-VPCs
+• VPCs
 
-IAM Users
+• IAM Users
 
-Route53 Hosted Zones
+• Route53 Hosted Zones
 
-CloudWatch Alarms
+• CloudWatch Alarms
 
-CloudFormation Stacks
+• CloudFormation Stacks
 
-Lambda Functions
+• Lambda Functions
 
-SNS Topics
+• SNS Topics
 
-SQS Queues
+• SQS Queues
 
-DynamoDB Tables
+• DynamoDB Tables
 
-EBS Volumes
+• EBS Volumes
 
 # Prerequisites
 
 Before running this script, make sure you have:
 
-Linux / MacOS / WSL environment
+-Linux / MacOS / WSL environment
 
-AWS CLI installed → Install Guide
+-AWS CLI installed → Install Guide
 
-AWS CLI configured with your credentials:
+-AWS CLI configured with your credentials:
 
-aws configure
+-aws configure
 
 # Usage
-Clone the repository
-git clone https://github.com/<your-username>/aws-resource-listing.git
-cd aws-resource-listing
+Clone the repository-->git clone https://github.com/<your-username>/aws-resource-listing.git
+                      cd aws-resource-listing
 
-Make the script executable
-chmod +x aws_resource_list.sh
+Make the script executable-->chmod +x aws_resource_list.sh
 
-Run the script
-./aws_resource_list.sh <aws_region> <aws_service>
+Run the script-->./aws_resource_list.sh <aws_region> <aws_service>
 
 Example
 ./aws_resource_list.sh us-east-1 ec2
