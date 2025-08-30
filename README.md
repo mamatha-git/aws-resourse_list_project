@@ -13,14 +13,14 @@ Validates AWS CLI installation and configuration before execution.
 
 Provides simple, automated resource discovery for auditing and monitoring.
 
+
 #Usage
 ./aws_resource_list.sh <aws_region> <aws_service>
-
-
 Example:
-
 ./aws_resource_list.sh us-east-1 ec2
-# Key Benefits
+
+
+#Key Benefits
 
 Saves time by automating repetitive AWS resource listing tasks.
 
