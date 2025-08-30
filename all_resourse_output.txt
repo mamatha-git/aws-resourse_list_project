@@ -1,0 +1,237 @@
+ubuntu@ip-172-31-19-164:~$ ./aws_resource_list.sh us-east-1 ec2
+Listing EC2 Instances in us-east-1
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-06a71495ca2309db0",
+            "OwnerId": "296062582540",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2025-08-30T16:49:46+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0ea67cf614ad62e6d"
+                            }
+                        }
+                    ],
+                    "ClientToken": "3bb1d34f-6e08-46bb-aa63-da30337c542d",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-54-221-146-9.compute-1.amazonaws.com",
+                                "PublicIp": "54.221.146.9"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2025-08-30T16:49:45+00:00",
+                                "AttachmentId": "eni-attach-026bf8534f7b8ce43",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-01e68d6ae5fe6eb43",
+                                    "GroupName": "launch-wizard-74"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:ff:f6:44:d8:0f",
+                            "NetworkInterfaceId": "eni-080ec415147a9e3a3",
+                            "OwnerId": "296062582540",
+                            "PrivateDnsName": "ip-172-31-19-164.ec2.internal",
+                            "PrivateIpAddress": "172.31.19.164",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-54-221-146-9.compute-1.amazonaws.com",
+                                        "PublicIp": "54.221.146.9"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-19-164.ec2.internal",
+                                    "PrivateIpAddress": "172.31.19.164"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-01d10ab61556332e1",
+                            "VpcId": "vpc-0bce4d06bcacf9510",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "sg-01e68d6ae5fe6eb43",
+                            "GroupName": "launch-wizard-74"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "server"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "BootMode": "uefi-preferred",
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2025-08-30T16:49:45+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default",
+                        "RebootMigration": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios",
+                    "NetworkPerformanceOptions": {
+                        "BandwidthWeighting": "default"
+                    },
+                    "Operator": {
+                        "Managed": false
+                    },
+                    "InstanceId": "i-0aacdf0db4ce555ca",
+                    "ImageId": "ami-0360c520857e3138f",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "PrivateDnsName": "ip-172-31-19-164.ec2.internal",
+                    "PublicDnsName": "ec2-54-221-146-9.compute-1.amazonaws.com",
+                    "StateTransitionReason": "",
+                    "KeyName": "project_key",
+                    "AmiLaunchIndex": 0,
+                    "ProductCodes": [],
+                    "InstanceType": "t2.micro",
+                    "LaunchTime": "2025-08-30T16:49:45+00:00",
+                    "Placement": {
+                        "AvailabilityZoneId": "use1-az4",
+                        "GroupName": "",
+                        "Tenancy": "default",
+                        "AvailabilityZone": "us-east-1c"
+                    },
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "SubnetId": "subnet-01d10ab61556332e1",
+                    "VpcId": "vpc-0bce4d06bcacf9510",
+                    "PrivateIpAddress": "172.31.19.164",
+                    "PublicIpAddress": "54.221.146.9"
+                }
+            ]
+        }
+    ]
+}
+ubuntu@ip-172-31-19-164:~$ ./aws_resource_list.sh us-east-1 rds
+Listing RDS Instances in us-east-1
+{[[A
+    "DBInstances": []
+}
+ubuntu@ip-172-31-19-164:~$ ./aws_resource_list.sh us-east-1 s3
+Listing S3 Buckets in us-east-1
+{
+    "Buckets": [
+        {
+            "Name": "mybuckest-first",
+            "CreationDate": "2025-08-23T07:00:13+00:00"
+        }
+    ],
+    "Owner": {
+        "DisplayName": "lshivanna447",
+        "ID": "a92fa31a38de56efa375f25a106b05da9765ae762a39bd5b1c5be6287efc8caa"
+    },
+    "Prefix": null
+}
+ubuntu@ip-172-31-19-164:~$ ./aws_resource_list.sh us-east-1 vpc
+Listing VPCs in us-east-1
+{
+    "Vpcs": [
+        {
+            "OwnerId": "296062582540",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-09dc309c26ddd3fde",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "IsDefault": true,
+            "BlockPublicAccessStates": {
+                "InternetGatewayBlockMode": "off"
+            },
+            "VpcId": "vpc-0bce4d06bcacf9510",
+            "State": "available",
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-0a4145b3246612b17"
+        }
+    ]
+}
+ubuntu@ip-172-31-19-164:~$ ./aws_resource_list.sh us-east-1 sns
+Listing SNS Topics in us-east-1
+{
+    "Topics": [
+        {
+            "TopicArn": "arn:aws:sns:us-east-1:296062582540:aws-cloudtrail-logs-296062582540-78c3fc2e"
+        },
+        {
+            "TopicArn": "arn:aws:sns:us-east-1:296062582540:cloud-watch"
+        }
+    ]
+}
+ubuntu@ip-172-31-19-164:~$ ./aws_resource_list.sh us-east-1 sqs
+Listing SQS Queues in us-east-1
+ubuntu@ip-172-31-19-164:~$ ./aws_resource_list.sh us-east-1 lambda
+Listing Lambda Functions in us-east-1
+{
+    "Functions": []
+}
+ubuntu@ip-172-31-19-164:~$ ./aws_resource_list.sh us-east-1 cloudwatch
+Listing CloudWatch Alarms in us-east-1
+{
+    "MetricAlarms": [],
+    "CompositeAlarms": []
+}
