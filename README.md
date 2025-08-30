@@ -65,8 +65,7 @@ Make the script executable-->chmod +x aws_resource_list.sh
 
 Run the script-->./aws_resource_list.sh <aws_region> <aws_service>
 
-Example
-./aws_resource_list.sh us-east-1 ec2
+Example-->./aws_resource_list.sh us-east-1 ec2
 
 
 This will list all EC2 instances in the us-east-1 region.
