@@ -70,35 +70,5 @@ Example-->./aws_resource_list.sh us-east-1 ec2
 
 This will list all EC2 instances in the us-east-1 region.
 
-# Example Outputs
 
-EC2
-
-Listing EC2 Instances in us-east-1
-{
-    "Reservations": [
-        {
-            "Instances": [
-                {
-                    "InstanceId": "i-0abcd1234efgh5678",
-                    "State": { "Name": "running" },
-                    "InstanceType": "t2.micro"
-                }
-            ]
-        }
-    ]
-}
-
-
-S3
-
-Listing S3 Buckets
-{
-    "Buckets": [
-        {
-            "Name": "my-first-bucket",
-            "CreationDate": "2024-01-01T10:00:00.000Z"
-        }
-    ]
-}
 
